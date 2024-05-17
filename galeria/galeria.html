@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="styles_galeria.css">
+    <script src="script_galeria.js"></script>
+</head>
+<body>
+    <header>
+        <h1>GALERÍA</h1>
+    </header>
+
+    <nav>
+        <ul class="menu_horizontal">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../medio ambiente/medio_ambiente.html">Medio ambiente</a></li>
+            <li>
+                <a href="../acciones/acciones_cbtis.html">Acciones CBTis 187</a>
+                <ul class="menu_vertical">
+                    <li><a href="../acciones/acciones_cbtis.html#seccion1">Consumo de alimentos</a></li>
+                    <li><a href="../acciones/acciones_cbtis.html#seccion2">Hidratación</a></li>
+                    <li><a href="../acciones/acciones_cbtis.html#seccion3">Recolección de basura en el aula</a></li>
+                    <li><a href="../acciones/acciones_cbtis.html#seccion4">Uso de recursos digitales</a></li>
+                </ul>
+            </li>
+            <li><a href="#main">Galería</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <button class="flecha" onclick="galeria_retroceder()">❮</button>
+        <div id="contenedor_imagenes">
+            <img src="images/arbol.jpg" alt="" class="img_galeria" id="img1">
+            <img src="images/lonchera.jpg" alt="" class="img_galeria" id="img2">
+            <img src="images/cohete_botella.jpg" alt="" class="img_galeria" id="img3">
+            <img src="images/bancas.jpg" alt="" class="img_galeria" id="img4">
+            <img src="images/cafeteria.jpg" alt="" class="img_galeria" id="img5">
+        </div>
+        
+        <button class="flecha" onclick="galeria_avanzar()">❯</button>
+    </main>
+
+    <footer>
+        <p>© 2024 Proyecto Escolar Comunitario CBTis 187. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

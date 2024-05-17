@@ -1,0 +1,456 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 203, 60);
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+        background: url("images/fondo_header.jpg");
+        background-size: cover;
+        color: aliceblue;
+        font-size: 30px;
+        height: 150px;
+    }
+    
+    h1 {
+        background-color: rgba(10, 84, 0, 0.85);
+        width: fit-content;
+        font-size: 33px;
+        padding: 10px;
+    }
+    
+    nav {
+        font-size: 20px;
+        background-color: rgb(3, 67, 9);
+    }
+    
+    .menu_horizontal {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+    }
+    
+    .menu_horizontal > li > a {
+        display: block;
+        padding: 20px 25px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    .menu_horizontal > li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 190px;
+        background-color: rgba(245, 186, 163, 0.9);
+    }
+    
+    .menu_horizontal li:hover .menu_vertical {
+        display: block;
+    }
+    
+    .menu_vertical li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical li a:hover{
+        color: aliceblue;
+    }
+    
+    .menu_vertical li a {
+        display: block;
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img_novedad {
+        width: calc(100% - 40px);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+        margin: 20px 0;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    
+    aside {
+        height: fit-content;
+        font-family: 'Comic Sans MS', sans-serif;
+        margin: 20px;
+        flex: 100px;
+        background-color: rgb(245, 186, 163);
+        padding: 20px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    #frog {
+        width: 100%;
+    }
+    
+    section {
+        flex: 70%;
+        padding: 20px;
+    }
+    
+    #novedad1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(179, 179, 179);
+        margin-bottom: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    #novedad2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(144, 143, 143);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    footer {
+        text-align: center;
+        background-color: rgb(0, 111, 32);
+        padding: 10px;
+        color: aliceblue;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 774px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+        background: url("images/fondo_header.jpg");
+        background-size: cover;
+        color: aliceblue;
+        font-size: 30px;
+        height: 150px;
+    }
+    
+    h1 {
+        background-color: rgba(10, 84, 0, 0.85);
+        width: fit-content;
+        font-size: 33px;
+        padding: 10px;
+    }
+    
+    nav {
+        font-size: 20px;
+        background-color: rgb(3, 67, 9);
+    }
+    
+    .menu_horizontal {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+    }
+    
+    .menu_horizontal > li > a {
+        display: block;
+        padding: 20px 25px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    .menu_horizontal > li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 190px;
+        background-color: rgba(245, 186, 163, 0.9);
+    }
+    
+    .menu_horizontal li:hover .menu_vertical {
+        display: block;
+    }
+    
+    .menu_vertical li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical li a:hover{
+        color: aliceblue;
+    }
+    
+    .menu_vertical li a {
+        display: block;
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img_novedad {
+        width: calc(100% - 40px);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+        margin: 20px 0;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    
+    aside {
+        height: fit-content;
+        font-family: 'Comic Sans MS', sans-serif;
+        margin: 20px;
+        flex: 100px;
+        background-color: rgb(245, 186, 163);
+        padding: 20px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    #frog {
+        width: 100%;
+    }
+    
+    section {
+        flex: 70%;
+        padding: 20px;
+    }
+    
+    #novedad1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(179, 179, 179);
+        margin-bottom: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    #novedad2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(144, 143, 143);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    footer {
+        text-align: center;
+        background-color: rgb(0, 111, 32);
+        padding: 10px;
+        color: aliceblue;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+        background: url("images/fondo_header.jpg");
+        background-size: cover;
+        color: aliceblue;
+        font-size: 30px;
+        height: 150px;
+    }
+    
+    h1 {
+        background-color: rgba(10, 84, 0, 0.85);
+        width: fit-content;
+        font-size: 33px;
+        padding: 10px;
+    }
+    
+    nav {
+        font-size: 15px;
+        background-color: rgb(3, 67, 9);
+    }
+    
+    .menu_horizontal {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        max-width: 85%;
+    }
+
+    .menu_horizontal li {
+        width: 25%;
+    }
+    
+    .menu_horizontal > li > a {
+        display: block;
+        padding: 20px 25px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    .menu_horizontal > li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 190px;
+        background-color: rgba(245, 186, 163, 0.9);
+    }
+    
+    .menu_horizontal li:hover .menu_vertical {
+        display: block;
+    }
+    
+    .menu_vertical li:hover {
+        background-color: rgb(0, 111, 32);
+    }
+    
+    .menu_vertical li a:hover{
+        color: aliceblue;
+    }
+    
+    .menu_vertical li a {
+        display: block;
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img_novedad {
+        width: calc(100% - 40px);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+        margin: 20px 0;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        font-family: 'Comic Sans MS', sans-serif;
+        margin: 20px;
+        flex: 100px;
+        background-color: rgb(245, 186, 163);
+        padding: 20px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+
+    #titulo_aside {
+        font-size: 50px;
+    }
+    
+    #frog {
+        width: 50%;
+    }
+    
+    section {
+        flex: 70%;
+        padding: 20px;
+    }
+    
+    #novedad1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(179, 179, 179);
+        margin-bottom: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    #novedad2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        background-color: rgb(144, 143, 143);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(24, 53, 27);
+    }
+    
+    footer {
+        text-align: center;
+        background-color: rgb(0, 111, 32);
+        padding: 10px;
+        color: aliceblue;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+}
